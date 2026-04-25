@@ -40,7 +40,7 @@ export const test = base.extend<TestFixtures>({
 
   loginAssertions: async ({ page }, use) => {
     const loginPage = new LoginPage(page);
-    await use(new LoginAssertions(loginPage));
+    await use(new LoginAssertions(page, loginPage));
   },
   // ShopPage
    shopPage: async ({ page }, use) => {
@@ -54,7 +54,7 @@ export const test = base.extend<TestFixtures>({
 
    shopAssertions: async ({ page }, use) => {
      const shopPage = new ShopPage(page);
-     await use(new ShopAssertions(shopPage));
+     await use(new ShopAssertions(page, shopPage));
    },
 });
 
