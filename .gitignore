@@ -1,0 +1,51 @@
+# 🔹 Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 🔹 Playwright
+playwright-report/
+test-results/
+blob-report/
+trace/
+screenshots/
+videos/
+
+# 🔹 Reports (custom)
+reports/
+reports/screenshots/
+
+# 🔹 Environment files
+.env
+.env.*
+config/environments/*.env
+
+# 🔹 Build / TS
+dist/
+build/
+*.tsbuildinfo
+
+# 🔹 OS
+.DS_Store
+Thumbs.db
+
+# 🔹 IDE / Editors
+.vscode/
+.idea/
+*.swp
+
+# 🔹 Logs
+logs/
+*.log
+
+# 🔹 Coverage
+coverage/
+
+# 🔹 Temporary files
+tmp/
+temp/
+
+# 🔹 Misc
+*.local
